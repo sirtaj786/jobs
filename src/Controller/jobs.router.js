@@ -29,7 +29,7 @@ jobController.get("/", async (req, res) => {
   const { userId } = req.body;
   const sortBy = req.query.sortBy;
   const filter = req.query.filter;
-  const limit=1
+  const limit=10
   const skip = (+page - 1) * limit;
   
   // Search
